@@ -15,11 +15,13 @@
   "scripts": {
     "generate": "openapi-typescript openapi.yaml -o src/schema.gen.ts",
     "build": "tsc -p tsconfig.build.json",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "docs": "node scripts/gen-docs.mjs"
   },
   "devDependencies": {
     "typescript": "^5.0.0",
-    "openapi-typescript": "^7.0.0"
+    "openapi-typescript": "^7.0.0",
+    "yaml": "^2.0.0"
   },
   "license": "MIT"
 }
